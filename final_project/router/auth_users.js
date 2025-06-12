@@ -19,6 +19,15 @@ regd_users.post("/login", (req,res) => {
   return res.status(300).json({message: "Yet to be implemented"});
 });
 
+//registerer users
+regd_users.post("/registrer", (req,res) => {
+  router.post("/", (req, res) => {
+  const data = req.body
+  users.push(data)
+  return res.status(300).json({message: "Yet to be implemented"});
+});
+});
+
 // Add a book review
 regd_users.put("/auth/review/:isbn", (req, res) => {
   //Write your code here
